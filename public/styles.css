@@ -1,0 +1,280 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #007BFF;
+        display: none;
+        width: 200px;
+        border-radius: 8px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    header nav ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #video-resolutions-container, #audio-resolutions-container {
+        flex-direction: column;
+    }
+
+    .resolution-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    color: #007BFF;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    text-align: center;
+    color: red;
+}
+
+#video-info {
+    display: none;
+    text-align: center;
+}
+
+#video-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#thumbnail {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+#video-resolutions-container, #audio-resolutions-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resolution-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.resolution-button:hover {
+    background-color: #0056b3;
+}
+
+#countdown-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#countdown {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF0000;
+    animation: countdown-animation 1s infinite;
+}
+
+@keyframes countdown-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+#download-button {
+    margin-top: 20px;
+    background-color: #28a745;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#download-button:hover {
+    background-color: #218838;
+}
+
+#ad-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 4px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+footer nav ul li {
+    margin: 5px 10px;
+}
+
+footer nav ul li a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0;
+    color: #666;
+}

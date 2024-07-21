@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <h1>Video Downloader</h1>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">TikTok</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>YouTube Downloader</h1>
+        <form id="download-form">
+            <input type="text" id="url" placeholder="Enter YouTube URL" required>
+            <button type="submit">Fetch Resolutions</button>
+        </form>
+        <p id="message"></p>
+        <div id="video-info" style="display: none;">
+            <h2 id="video-title"></h2>
+            <img id="thumbnail" src="" alt="Thumbnail">
+            <h3>Select Video Resolution:</h3>
+            <div id="video-resolutions-container"></div>
+            <h3>Select Audio Format:</h3>
+            <div id="audio-resolutions-container"></div>
+        </div>
+        <div id="countdown-container" style="display: none;">
+            <p>Download will start in <span id="countdown">10</span> seconds...</p>
+            <button id="download-button" style="display: none;">Download</button>
+            <div id="ad-container">
+                <p>Advertisement</p>
+                <!-- Ad content goes here -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Video Downloader. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
